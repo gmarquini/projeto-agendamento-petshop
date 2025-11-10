@@ -30,14 +30,38 @@ nav {
 }
 
 #page {
+  padding: 62px 80px;
   display: flex;
 }
 
 main {
   margin: auto;
+
+  & .main-header {
+    display: flex;
+    margin-bottom: 32px;
+  }
 }
 
-.main-header {
+ul {
   display: flex;
-  margin: 3.875rem 5rem 2rem;
+  flex-direction: column;
+  gap: 12px;
+}
+
+li {
+  list-style: none;
+  background-color: var(--background-tertiary);
+  border-radius: 10px;
+
+  & header {
+    display: flex;
+    padding: 0.875rem;
+    justify-content: space-between;
+  }
+
+  & .day {
+    gap: 12px;
+    display: flex;
+  }
 }
