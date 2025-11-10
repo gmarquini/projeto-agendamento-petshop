@@ -1,4 +1,6 @@
 :root {
+  --logo-background: #2e2c30;
+
   --content-primary: #ffffff;
   --content-secondary: #98959d;
   --content-tertiary: #666666;
@@ -21,4 +23,16 @@
   --accent-yellow-light: #756e1b;
   --accent-orange: #f09102;
   --accent-orange-light: #75501b;
+
+  --font-inter-tight: 'Inter Tight', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --p-sm: 500 0.875rem/24px var(--font-inter);
+  --p-md: 500 0.75rem/16px var(--font-inter);
+
+  --label-lg: 700 1rem/24px var(--font-inter);
+  --label-md: 700 0.875rem/24px var(--font-inter);
+  --label-sm: 700 0.75rem/16px var(--font-inter);
+
+  --link: 500 0.75rem/16px var(--font-inter);
 }

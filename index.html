@@ -4,74 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agendamento Petshop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <main>
-      <!-- Cabeçalho -->
-      <header>
-        <h1>Sua agenda</h1>
-        <p>
-          Aqui você pode ver todoso os clientes e seviços agendados para hoje.
-        </p>
-        <div class="date"></div>
-      </header>
-      <!-- Lista -->
-      <ul>
-        <!-- Exemplo Manhã -->
-        <li>
-          <header>
-            <img src="src/assets/icons/morning-icon.svg" alt="ícone de manhã" />
-            <h2>Manhã</h2>
-            <h2>09h-12h</h2>
-          </header>
-          <div class="schedule">
-            <div class="schedule-time">9:00</div>
-            <div class="schedule-client">
-              <div class="pet-name">Thor</div>
-              <div class="pet-owner">Fernanda Costa</div>
-            </div>
-            <div class="remove">Remover agendamento</div>
+    <nav>
+      <img src="src/assets/icons/dog-icon.svg" alt="ícone de cachorro" />
+      <p>MUNDO PET</p>
+    </nav>
+
+    <div id="page">
+      <main>
+        <!-- Cabeçalho -->
+        <header class="main-header">
+          <div class="title">
+            <h1>Sua agenda</h1>
+            <p>
+              Aqui você pode ver todoso os clientes e seviços agendados para
+              hoje.
+            </p>
           </div>
-        </li>
-        <!-- Exemplo Tarde -->
-        <li>
-          <header>
-            <img
-              src="src/assets/icons/afternoon-icon.svg"
-              alt="ícone de manhã"
-            />
-            <h2>Tarde</h2>
-            <h2>13h-18h</h2>
-          </header>
-          <div class="schedule">
-            <div class="schedule-time">9:00</div>
-            <div class="schedule-client">
-              <div class="pet-name">Thor</div>
-              <div class="pet-owner">Fernanda Costa</div>
-            </div>
-            <div class="remove">Remover agendamento</div>
+          <div class="date">
+            <input type="date" />
           </div>
-        </li>
-        <!-- Exemplo Noite -->
-        <li>
-          <header>
-            <img src="src/assets/icons/night-icon.svg" alt="ícone de noite" />
-            <h2>Noite</h2>
-            <h2>19h-21h</h2>
-          </header>
-          <div class="schedule">
-            <div class="schedule-time">9:00</div>
-            <div class="schedule-client">
-              <div class="pet-name">Thor</div>
-              <div class="pet-owner">Fernanda Costa</div>
+        </header>
+        <!-- Lista -->
+        <ul>
+          <!-- Exemplo Manhã -->
+          <li>
+            <header>
+              <img
+                src="src/assets/icons/morning-icon.svg"
+                alt="ícone de manhã"
+              />
+              <h2>Manhã</h2>
+              <h2>09h-12h</h2>
+            </header>
+            <div class="schedule">
+              <div class="schedule-time">9:00</div>
+              <div class="schedule-client">
+                <div class="pet-name">Thor</div>
+                <div class="pet-owner">Fernanda Costa</div>
+              </div>
+              <div class="remove">Remover agendamento</div>
             </div>
-            <div class="remove">Remover agendamento</div>
-          </div>
-        </li>
-      </ul>
-    </main>
-    <aside>
-      <button type="button">NOVO AGENDAMENTO</button>
-    </aside>
+          </li>
+          <!-- Exemplo Tarde -->
+          <li>
+            <header>
+              <img
+                src="src/assets/icons/afternoon-icon.svg"
+                alt="ícone de manhã"
+              />
+              <h2>Tarde</h2>
+              <h2>13h-18h</h2>
+            </header>
+            <div class="schedule">
+              <div class="schedule-time">9:00</div>
+              <div class="schedule-client">
+                <div class="pet-name">Thor</div>
+                <div class="pet-owner">Fernanda Costa</div>
+              </div>
+              <div class="remove">Remover agendamento</div>
+            </div>
+          </li>
+          <!-- Exemplo Noite -->
+          <li>
+            <header>
+              <img src="src/assets/icons/night-icon.svg" alt="ícone de noite" />
+              <h2>Noite</h2>
+              <h2>19h-21h</h2>
+            </header>
+            <div class="schedule">
+              <div class="schedule-time">9:00</div>
+              <div class="schedule-client">
+                <div class="pet-name">Thor</div>
+                <div class="pet-owner">Fernanda Costa</div>
+              </div>
+              <div class="remove">Remover agendamento</div>
+            </div>
+          </li>
+        </ul>
+        <aside>
+          <button type="button">NOVO AGENDAMENTO</button>
+        </aside>
+      </main>
+    </div>
   </body>
 </html>

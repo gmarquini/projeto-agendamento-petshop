@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--content-primary);
+  font-family: var(--font-inter-tight);
+}
+
+nav {
+  font-family: 'Familjen Grotesk', 'sans serif';
+  font-weight: 800;
+  display: flex;
+  font-size: 1rem;
+  padding: 0.75rem 0.75rem;
+  color: var(--background-brand);
+  height: 3rem;
+  max-width: 9.5625rem;
+  background-color: var(--logo-background);
+  border-radius: 0 0 20px 0;
+  gap: 4px;
+
+  & img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+#page {
+  display: flex;
+}
+
+main {
+  margin: auto;
+}
+
+.main-header {
+  display: flex;
+  margin: 3.875rem 5rem 2rem;
+}
