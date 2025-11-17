@@ -145,9 +145,11 @@ aside {
   border-radius: 10px;
   color: rgb(138, 138, 138);
   padding: 10px;
+  transition: ease 1s;
 }
 
 .date-container input:hover {
+  transition: ease 1s;
   border: solid 1px white;
 }
 
