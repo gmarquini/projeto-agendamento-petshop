@@ -216,6 +216,21 @@ input[type='date'] {
   }
 }
 
+.hide-animation {
+  animation: hide 0.3s ease;
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 /* Formulário */
 
 .modal > form {
