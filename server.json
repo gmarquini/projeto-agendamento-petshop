@@ -2,8 +2,24 @@
   "schedules": [
     {
       "id": "1",
-      "when": "2025-11-18",
+      "when": "2025-11-24",
       "hour": "11:00",
+      "petName": "Thor",
+      "name": "João",
+      "service": "Castração"
+    },
+    {
+      "id": "1",
+      "when": "2025-11-24",
+      "hour": "19:00",
+      "petName": "Thor",
+      "name": "João",
+      "service": "Castração"
+    },
+    {
+      "id": "1",
+      "when": "2025-11-24",
+      "hour": "15:00",
       "petName": "Thor",
       "name": "João",
       "service": "Castração"

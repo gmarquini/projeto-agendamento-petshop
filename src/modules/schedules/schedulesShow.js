@@ -7,10 +7,14 @@ export function schedulesShow({ dailySchedules }) {
   try {
     listContainer.innerHTML = ''
 
-    dailySchedules.forEach((schedule) => {
-      const li = createSchedule(schedule)
-      listContainer.appendChild(li)
-    })
+    dailySchedules
+      // ordena os agendamentos por horário antes de carregar na tela.
+      .sort((a, b) => a.hour.localeCompare(b.hour))
+      // renderiza os horários.
+      .forEach((schedule) => {
+        const li = createSchedule(schedule)
+        listContainer.appendChild(li)
+      })
   } catch (error) {
     console.log('Não foi possível exibir os agendamentos:', error)
   }
