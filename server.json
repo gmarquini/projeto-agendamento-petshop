@@ -2,12 +2,11 @@
   "schedules": [
     {
       "id": "1",
-      "time-start": "9",
-      "time-end": "11",
-      "pet": "Thor",
-      "owner": "João",
-      "service": "vacinação",
-      "date": "18/11/2025"
+      "date": "18/11/2025",
+      "hour": "11:00",
+      "petName": "Thor",
+      "name": "João",
+      "service": "Castração"
     }
   ]
 }
