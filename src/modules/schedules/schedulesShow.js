@@ -8,7 +8,7 @@ export function schedulesShow({ dailySchedules }) {
     listContainer.innerHTML = ''
 
     dailySchedules.forEach((schedule) => {
-      const li = createScheduleItem(schedule)
+      const li = createSchedule(schedule)
       listContainer.appendChild(li)
     })
   } catch (error) {
@@ -16,7 +16,7 @@ export function schedulesShow({ dailySchedules }) {
   }
 }
 
-function createScheduleItem(schedule) {
+function createSchedule(schedule) {
   const li = document.createElement('li')
   li.classList.add('schedule-container')
 
@@ -55,8 +55,6 @@ function createHeader(schedule) {
     img.src = 'src/assets/icons/night-icon.svg'
     h2.textContent = 'Noite'
   }
-
-  console.log(typeof slicedTime, slicedTime)
 
   header.append(dayDiv, title)
   dayDiv.append(img, h2)
