@@ -2,7 +2,7 @@
   "schedules": [
     {
       "id": "1",
-      "date": "18/11/2025",
+      "when": "2025-11-18",
       "hour": "11:00",
       "petName": "Thor",
       "name": "João",

@@ -2,9 +2,9 @@ import dayjs from 'dayjs'
 
 const listContainer = document.getElementById('list-container')
 
+// chama a função de construção para cada agendamento no banco de dados.
 export function schedulesShow({ dailySchedules }) {
   try {
-    console.log('schedulesShow funcionando!')
     listContainer.innerHTML = ''
 
     dailySchedules.forEach((schedule) => {
@@ -15,6 +15,8 @@ export function schedulesShow({ dailySchedules }) {
     console.log('Não foi possível exibir os agendamentos:', error)
   }
 }
+
+// Constrói o elemento.
 
 function createSchedule(schedule) {
   const li = document.createElement('li')
@@ -34,11 +36,11 @@ function createHeader(schedule) {
   dayDiv.classList.add('day')
 
   const title = document.createElement('h2')
-  title.textContent = dayjs(schedule.when).format('HH:mm')
+  title.textContent = schedule.hour
 
   // Hora
 
-  const time = dayjs(schedule.when).format('HH:mm')
+  const time = schedule.hour
   const slicedTime = Number(time.slice(0, 2))
 
   // Período do dia.
@@ -68,7 +70,7 @@ function createScheduleContent(schedule) {
   // Hora
   const time = document.createElement('div')
   time.classList.add('schedule-time')
-  time.textContent = dayjs(schedule.when).format('HH:mm')
+  time.textContent = schedule.hour
 
   // Cliente + Pet
   const client = document.createElement('div')
@@ -85,37 +87,9 @@ function createScheduleContent(schedule) {
 
   // Botão de remover
   const remove = document.createElement('div')
-  remove.classList.add('remove-schedule')
+  remove.classList.add('remove')
   remove.textContent = 'Remover agendamento'
 
   wrapper.append(time, client, service, remove)
   return wrapper
 }
-
-/*
-          <li class="schedule-container">
-
-            <header>
-              <div class="day">
-                <img
-                  src="src/assets/icons/morning-icon.svg"
-                  alt="ícone de manhã"
-                />
-                <h2>Manhã</h2>
-              </div>
-              <h2>09h-12h</h2>
-            </header>
-
-            <div class="schedule">
-              <div class="schedule-time">9:00</div>
-              <div class="schedule-client">
-                <span class="pet-name">Thor</span>
-                <span class="pet-owner">Fernanda Costa</span>
-              </div>
-              <div class="service">Vacinação</div>
-
-              <div class="remove">Remover agendamento</div>
-            </div>
-
-          </li>
-*/

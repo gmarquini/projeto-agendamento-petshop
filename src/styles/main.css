@@ -110,6 +110,7 @@ main {
 
   & .remove {
     color: var(--content-secondary);
+    cursor: pointer;
   }
 }
 
