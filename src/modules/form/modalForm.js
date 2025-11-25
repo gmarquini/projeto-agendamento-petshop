@@ -1,8 +1,11 @@
+import dayjs from 'dayjs'
+import { submitForm } from './submit'
+
 const newScheduleButton = document.getElementById('new-schedule-button')
 const modalSpace = document.getElementById('modal-space')
 
 newScheduleButton.addEventListener('click', (event) => {
-  event.preventDefault
+  event.preventDefault()
   openModalForm()
 })
 
@@ -10,7 +13,7 @@ function openModalForm() {
   document.body.style.overflow = 'hidden' // bloqueia o scroll quando o modal estiver aberto.
 
   const modalHtml = `<div class="modal">
-          <form action="">
+          <form id='form' action="post">
             <div class="header">
               <h1>Agende um atendimento</h1>
               <p>Preencha os dados do cliente para realizar o agendamento:</p>
@@ -86,4 +89,10 @@ function openModalForm() {
       document.body.style.overflow = 'hidden'
     }, 250)
   })
+
+  // Define a data de hoje como valor padrão do input-date.
+  const inputDate = document.getElementById('input-date')
+  inputDate.value = dayjs().format('YYYY-MM-DD')
+
+  submitForm()
 }

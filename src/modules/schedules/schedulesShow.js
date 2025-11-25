@@ -1,5 +1,3 @@
-import dayjs from 'dayjs'
-
 const listContainer = document.getElementById('list-container')
 
 // chama a função de construção para cada agendamento no banco de dados.
@@ -25,6 +23,7 @@ export function schedulesShow({ dailySchedules }) {
 function createSchedule(schedule) {
   const li = document.createElement('li')
   li.classList.add('schedule-container')
+  li.setAttribute('data-id', schedule.id)
 
   const header = createHeader(schedule)
   const content = createScheduleContent(schedule)

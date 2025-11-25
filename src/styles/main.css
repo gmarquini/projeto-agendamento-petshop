@@ -6,7 +6,7 @@
 
 body {
   background-color: var(--background-primary);
-  color: var(--content-primary);
+  color: white;
   font-family: var(--font-inter-tight);
   height: 100vh;
   overflow: hidden;
@@ -263,6 +263,7 @@ input[type='date'] {
     border: 1px solid var(--border-primary);
     background-color: #23242c;
     transition: border-color ease 1s;
+    color: white;
   }
 
   #input-owner-name {
