@@ -14,7 +14,7 @@ O projeto possibilita registrar atendimentos, armazenar dados do tutor e do pet,
 
 ## Desenvolvedor
 
-**Gabriel Marquini**  
+**Gabriel Valera Marquini**  
 Estudante de desenvolvimento web com foco em JavaScript.
 
 ---
